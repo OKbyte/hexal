@@ -6,8 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hexal</title>
 
-  <!-- Pixel Glass -->
+  <link href="./assets/css/normalize.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
+
   <style>
+    /* Pixel Glass */
     html {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -22,31 +25,58 @@
       }
     }
     /* Desktop */
-    @media (min-width: 960px) {
+    @media (min-width: 1020px) {
       html {
         /* Desktop layout */
         background-image: url("./materials/hexal.jpg");
       }
     }
+
+    /* Layout */
+    /* body > * {
+      outline: 2px solid #a8688b;
+      outline-offset: -2px;
+    }
+
+    body > * > * {
+      outline: 2px dashed #adaab7;
+      outline-offset: -2px;
+    }
+
+    body > * > * > * {
+      outline: 2px solid greenyellow;
+      outline-offset: -2px;
+    } */
   </style>
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 <body>
-  <header>
-    <h1>
-      Hexal
-      <img src="./assets/images/logo.png" alt="Hexal logo — arrow pointing down">
-    </h1>
-    <nav>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#get-in-touch">Get In Touch</a></li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="inner">
+      <h1 class="visuallyhidden">Hexal</h1>
+      <nav class="navigation" aria-label="Main navigation">
+        <div class="navigation__logo logo">
+          <img class="logo__image" src="./assets/images/logo.png" alt="Hexal logo — arrow pointing down" width="64" height="55">
+        </div>
+        <ul class="navigation__list navigation__list--start">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">About</a>
+          </li>
+        </ul>
+        <ul class="navigation__list navigation__list--end">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#get-in-touch">Get In Touch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
