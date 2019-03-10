@@ -329,38 +329,49 @@
     </section>
   </main>
 
-  <footer id="get-in-touch">
-    <h2>Get In Touch</h2>
-    <form action="" method="POST">
-      <fieldset>
-        <legend>In order to get in touch use the contact form below:</legend>
-        <div>
-          <label for="user-name">Name</label>
-          <input id="user-name" name="name" type="text" placeholder="Name (Required)" required>
+  <footer class="page-footer" id="get-in-touch">
+    <div class="inner">
+      <div class="page-footer__holder">
+        <div class="inner inner--page-footer">
+          <h2 class="page-footer__title">Get In Touch</h2>
+          <div class="page-footer__box">
+            <form class="page-footer__form form" action method="POST">
+              <fieldset>
+                <legend class="form__title">In order to get in touch use the contact form below:</legend>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="user-name">Name</label>
+                  <input id="user-name" name="name" type="text" placeholder="Name (Required)" required>
+                </div>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="user-email">Email</label>
+                  <input id="user-email" name="email" type="email" placeholder="Email (Required)" required>
+                </div>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="email-subject">Subject</label>
+                  <input id="email-subject" name="subject" type="text" placeholder="Subject">
+                </div>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="email-message">Message</label>
+                  <textarea id="email-message" name="message" rows="9" placeholder="Write your message here..."></textarea>
+                </div>
+              </fieldset>
+              <button class="form__button">Send</button>
+            </form>
+            <div class="page-footer__addition addition">
+              <p class="addition__info"><b>Quisque Hendrerit:</b> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
+              <ul class="addition__contacts contacts">
+                <li class="contacts__item contacts__item--address">Elm St. 14/05 Lost City</li>
+                <li class="contacts__item contacts__item--phone"><a class="contacts__link" href="tel:+35283318635">+3528 331 86 35</a></li>
+                <li class="contacts__item contacts__item--mail"><a class="contacts__link" href="mailto:info@hexalcorp.com">info@hexalcorp.com</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <label for="user-email">Email</label>
-          <input id="user-email" name="email" type="email" placeholder="Email (Required)" required>
-        </div>
-        <div>
-          <label for="email-subject">Subject</label>
-          <input id="email-subject" name="subject" type="text" placeholder="Subject">
-        </div>
-        <div>
-          <label for="email-message">Message</label>
-          <textarea id="email-message" name="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-        </div>
-      </fieldset>
-      <button>Send</button>
-    </form>
-    <p><b>Quisque Hendrerit:</b> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
-    <ul>
-      <li>Elm St. 14/05 Lost City</li>
-      <li><a href="tel:+35283318635">+3528 331 86 35</a></li>
-      <li><a href="mailto:info@hexalcorp.com">info@hexalcorp.com</a></li>
-    </ul>
-
-    <p>&copy; Copyright 2013 by PSDchat</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">&copy; Copyright 2013 by PSDchat</p>
+    </div>
   </footer>
 </body>
 </html>
