@@ -79,86 +79,195 @@
     </div>
   </header>
 
-  <main>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li><a href="#group-1">Group 1</a></li>
-        <li><a href="#">Group 2</a></li>
-        <li><a href="#">Group 3</a></li>
-        <li><a href="#">Group 4</a></li>
-        <li><a href="#">Group 5</a></li>
-        <li><a href="#">Group 6</a></li>
-      </ul>
-      <div>
-        <div id="group-1">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-1.jpg" alt="The name of the illustration should be here">
+  <main class="page-main">
+    <section class="portfolio inner" id="portfolio">
+      <h2 class="visuallyhidden">Portfolio</h2>
+      <div class="portfolio__holder">
+        <ul class="portfolio__navigation slider-nav">
+          <li class="slider-nav__item">
+            <a class="slider-nav__link" href="#slide-1">
+              <span class="visuallyhidden">Slide 1</span>
+            </a>
+          </li>
+          <li class="slider-nav__item">
+            <a class="slider-nav__link" href="#slide-2">
+              <span class="visuallyhidden">Slide 2</span>
+            </a>
+          </li>
+          <li class="slider-nav__item">
+            <a class="slider-nav__link slider-nav__link--active" href="#slide-3">
+              <span class="visuallyhidden">Slide 3</span>
+            </a>
+          </li>
+          <li class="slider-nav__item">
+            <a class="slider-nav__link" href="#slide-4">
+              <span class="visuallyhidden">Slide 4</span>
+            </a>
+          </li>
+          <li class="slider-nav__item">
+            <a class="slider-nav__link" href="#slide-5">
+              <span class="visuallyhidden">Slide 5</span>
+            </a>
+          </li>
+          <li class="slider-nav__item">
+            <a class="slider-nav__link" href="#slide-6">
+              <span class="visuallyhidden">Slide 6</span>
+            </a>
+          </li>
+        </ul>
+        <div class="portfolio__slider slider">
+          <ul class="slider__slide gallery" id="slide-1"></ul>
+          <ul class="slider__slide gallery" id="slide-2"></ul>
+          <ul class="slider__slide slider__slide--active gallery" id="slide-3">
+            <li class="gallery__decoration gallery__decoration--left" aria-hidden="true"></li>
+            <li class="gallery__decoration gallery__decoration--right" aria-hidden="true"></li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-1.jpg" alt="The name of the illustration should be here" style="object-position: 54% 70%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-2.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-2.jpg" alt="The name of the illustration should be here" style="object-position: 50% 66%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-3.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-3.jpg" alt="The name of the illustration should be here">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-4.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-4.jpg" alt="The name of the illustration should be here" style="object-position: 48% 118%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-5.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-5.jpg" alt="The name of the illustration should be here" style="object-position: 52% 78%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-6.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-6.jpg" alt="The name of the illustration should be here" style="object-position: 48% 82%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-7.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-7.jpg" alt="The name of the illustration should be here" style="object-position: 48% 50%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-8.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-8.jpg" alt="The name of the illustration should be here" style="object-position: 45% 50%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-9.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-9.jpg" alt="The name of the illustration should be here" style="object-position: 52% 56%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-10.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-10.jpg" alt="The name of the illustration should be here">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-11.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-11.jpg" alt="The name of the illustration should be here">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-12.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-12.jpg" alt="The name of the illustration should be here" style="object-position: 48% 46%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-13.jpg" alt="The name of the illustration should be here">
+            <li class="gallery__item">
+              <a class="gallery__link" href="#">
+                <div class="hexagon">
+                  <div class="hexagon__inner hexagon__inner--a">
+                    <div class="hexagon__inner hexagon__inner--b">
+                      <img class="gallery__image" src="./assets/images/illustrations/illustration-13.jpg" alt="The name of the illustration should be here" style="object-position: 24% 42%;">
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
           </ul>
+          <ul class="slider__slide gallery" id="slide-4"></ul>
+          <ul class="slider__slide gallery" id="slide-5"></ul>
+          <ul class="slider__slide gallery" id="slide-6"></ul>
         </div>
       </div>
     </section>
