@@ -91,6 +91,16 @@ h6 {
   padding-left: 30px;
 }
 
+.inner--about {
+  max-width: 822px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-width: 1px;
+  border-style: none solid none solid;
+  border-color: hsl(168, 65%, 37%);
+}
+
 /* Header */
 .navigation {
   display: flex;
@@ -385,7 +395,7 @@ h6 {
 
   transition-timing-function: ease-in-out;
   transition-duration: 150ms;
-  transition-property: transform margin-right;
+  transition-property: transform, margin-right;
 }
 
 .slider-nav__link:hover,
@@ -394,7 +404,7 @@ h6 {
 }
 
 .slider-nav__link:focus {
-  outline: 2px solid hsla(168, 59%, 44%, 0.3);
+  outline: 1px solid hsla(168, 59%, 44%, 0.3);
 }
 
 .slider-nav__link--active,
@@ -414,7 +424,166 @@ h6 {
   transform: scale(2);
 }
 
+/* About */
+.about {
+  padding-top: 13px;
+  padding-bottom: 12px;
+
+  background-color: rgb(46, 179, 152);
+}
+
+.card {
+  display: flex;
+  min-height: 316px;
+
+  color: hsl(169, 86%, 92%);
+}
+
+.card__photo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  margin-right: 18px;
+}
+
+.card__photo img {
+  display: block;
+  width: 180px;
+  height: 206px;
+
+  object-fit: none;
+  object-position: 50% 50%;
+}
+
+.card__info {
+  padding-top: 50px;
+}
+
+.card__name {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 30px;
+  font-family: "Maven Pro", "Arial", "Helvetica", sans-serif;
+}
+
+.card__addition {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 18px;
+  font-family: "Maven Pro", "Arial", "Helvetica", sans-serif;
+  color: hsl(168, 60%, 32%);
+}
+
+.card__text {
+  margin-top: 13px;
+  margin-bottom: 0;
+
+  font-size: 12px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.card__socials {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.socials__link {
+  display: block;
+  width: 24.5px;
+  height: 24px;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  position: relative;
+}
+
+.socials__link:focus {
+  outline: 2px solid hsla(169, 86%, 92%);
+}
+
+.socials__link--facebook {
+  background: url("../images/icons/socials.png") -319px -10px;
+}
+
+.socials__link--facebook:hover,
+.socials__link--facebook:focus {
+  background: url("../images/icons/socials.png") -274px -10px;
+}
+
+.socials__link--twitter {
+  background: url("../images/icons/socials.png") -54px -10px;
+}
+
+.socials__link--twitter:hover,
+.socials__link--twitter:focus {
+  background: url("../images/icons/socials.png") -10px -10px;
+}
+
+.socials__link--google {
+  background: url("../images/icons/socials.png") -409px -10px;
+}
+
+.socials__link--google:hover,
+.socials__link--google:focus {
+  background: url("../images/icons/socials.png") -364px -10px;
+}
+
+.socials__link--pinterest {
+  background: url("../images/icons/socials.png") -230px -10px;
+}
+
+.socials__link--pinterest:hover,
+.socials__link--pinterest:focus {
+  background: url("../images/icons/socials.png") -186px -10px;
+}
+
+.socials__link--linkedin {
+  background: url("../images/icons/socials.png") -499px -10px;
+}
+
+.socials__link--linkedin:hover,
+.socials__link--linkedin:focus {
+  background: url("../images/icons/socials.png") -454px -10px;
+}
+
+.socials__link--dribbble {
+  background: url("../images/icons/socials.png") -142px -10px;
+}
+
+.socials__link--dribbble:hover,
+.socials__link--dribbble:focus {
+  background: url("../images/icons/socials.png") -98px -10px;
+}
+
 /* Pixel perfect fixes */
 .logo__image {
   transform: translateY(2px);
+}
+
+.card__name {
+  letter-spacing: -0.3px;
+}
+
+.card__addition {
+  line-height: 1;
+  word-spacing: -1px;
+}
+
+.card__text {
+  letter-spacing: 0.1px;
+  word-spacing: -1.6px;
 }
