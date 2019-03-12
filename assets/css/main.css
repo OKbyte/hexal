@@ -281,8 +281,8 @@ h6 {
 }
 
 .navigation__link:focus {
-  outline: none;
-  box-shadow: 0 2px hsla(168, 59%, 44%, 0.5);
+  outline: 1px dashed hsl(0, 0%, 100%);
+  outline-offset: 1px;
 }
 
 .navigation__link--active,
@@ -472,7 +472,8 @@ h6 {
 }
 
 .slider-nav__link:focus {
-  outline: 1px solid hsla(168, 59%, 44%, 0.5);
+  outline: 1px dashed black;
+  outline-offset: 1px;
 }
 
 .slider-nav__link--active,
@@ -565,7 +566,8 @@ h6 {
 }
 
 .socials__link:focus {
-  outline: 2px solid hsla(169, 86%, 92%, 0.5);
+  outline: 1px dashed hsl(0, 0%, 100%);
+  outline-offset: 1px;
 }
 
 .socials__link--facebook {
@@ -728,7 +730,8 @@ h6 {
 }
 
 .form__button:focus {
-  outline: 2px solid hsla(0, 0%, 88%, 0.5);
+  outline: 1px dashed hsl(0, 0%, 100%);
+  outline-offset: 1px;
 }
 
 .form__button:active {
@@ -802,9 +805,9 @@ h6 {
 }
 
 .contacts__link:focus {
-  outline: none;
+  outline: 1px dashed hsl(0, 0%, 100%);
+  outline-offset: 1px;
 }
-
 
 .copyright-text {
   margin-top: 0;
