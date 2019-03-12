@@ -42,34 +42,34 @@
       <h2 class="visuallyhidden">Portfolio</h2>
       <div class="wrapper wrapper--portfolio">
         <div class="box box--portfolio">
-          <ul class="portfolio__navigation slider-nav reset-list">
+          <ul class="portfolio__navigation slider-nav reset-list" role="tablist">
             <li class="slider-nav__item">
-              <a class="slider-nav__link" href="#slide-1">
+              <a class="slider-nav__link" id="slide-1-tab" href="#slide-1" role="tab" aria-controls="slide-1" aria-selected="false">
                 <span class="visuallyhidden">Slide 1</span>
               </a>
             </li>
             <li class="slider-nav__item">
-              <a class="slider-nav__link" href="#slide-2">
+              <a class="slider-nav__link" id="slide-2-tab" href="#slide-2" role="tab" aria-controls="slide-2" aria-selected="false">
                 <span class="visuallyhidden">Slide 2</span>
               </a>
             </li>
             <li class="slider-nav__item">
-              <a class="slider-nav__link slider-nav__link--active" href="#slide-3">
+              <a class="slider-nav__link slider-nav__link--active" id="slide-3-tab" href="#slide-3" role="tab" aria-controls="slide-3" aria-selected="true">
                 <span class="visuallyhidden">Slide 3</span>
               </a>
             </li>
             <li class="slider-nav__item">
-              <a class="slider-nav__link" href="#slide-4">
+              <a class="slider-nav__link" id="slide-4-tab" href="#slide-4" role="tab" aria-controls="slide-4" aria-selected="false">
                 <span class="visuallyhidden">Slide 4</span>
               </a>
             </li>
             <li class="slider-nav__item">
-              <a class="slider-nav__link" href="#slide-5">
+              <a class="slider-nav__link" id="slide-5-tab" href="#slide-5" role="tab" aria-controls="slide-5" aria-selected="false">
                 <span class="visuallyhidden">Slide 5</span>
               </a>
             </li>
             <li class="slider-nav__item">
-              <a class="slider-nav__link" href="#slide-6">
+              <a class="slider-nav__link" id="slide-6-tab" href="#slide-6" role="tab" aria-controls="slide-6" aria-selected="false">
                 <span class="visuallyhidden">Slide 6</span>
               </a>
             </li>
@@ -78,9 +78,9 @@
             <div class="side-lines__line side-lines__line--left"></div>
             <div class="side-lines__line side-lines__line--right"></div>
             <div class="portfolio__slider slider">
-              <ul class="slider__slide gallery reset-list" id="slide-1"></ul>
-              <ul class="slider__slide gallery reset-list" id="slide-2"></ul>
-              <ul class="slider__slide slider__slide--active gallery reset-list" id="slide-3">
+              <ul class="slider__slide gallery reset-list" id="slide-1" role="tabpanel" aria-labelledby="slider-1-tab"></ul>
+              <ul class="slider__slide gallery reset-list" id="slide-2" role="tabpanel" aria-labelledby="slider-2-tab"></ul>
+              <ul class="slider__slide slider__slide--active gallery reset-list" id="slide-3" role="tabpanel" aria-labelledby="slider-3-tab">
                 <li class="gallery__item">
                   <a class="gallery__link" href="#">
                     <div class="hexagon">
@@ -225,9 +225,9 @@
                   </a>
                 </li>
               </ul>
-              <ul class="slider__slide gallery reset-list" id="slide-4"></ul>
-              <ul class="slider__slide gallery reset-list" id="slide-5"></ul>
-              <ul class="slider__slide gallery reset-list" id="slide-6"></ul>
+              <ul class="slider__slide gallery reset-list" id="slide-4" role="tabpanel" aria-labelledby="slider-4-tab"></ul>
+              <ul class="slider__slide gallery reset-list" id="slide-5" role="tabpanel" aria-labelledby="slider-5-tab"></ul>
+              <ul class="slider__slide gallery reset-list" id="slide-6" role="tabpanel" aria-labelledby="slider-6-tab"></ul>
             </div>
           </div>
         </div>
