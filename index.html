@@ -5,158 +5,337 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hexal</title>
+
+  <link href="./assets/css/normalize.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>
-      Hexal
-      <img src="./assets/images/logo.png" alt="Hexal logo — arrow pointing down">
-    </h1>
-    <nav>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#get-in-touch">Get In Touch</a></li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <h1 class="visuallyhidden">Hexal</h1>
+    <div class="wrapper">
+      <nav class="navigation" aria-label="Main navigation">
+        <div class="navigation__logo logo">
+          <img class="logo__image" src="./assets/images/logo.png" alt="Hexal logo — arrow pointing down" width="64" height="55">
+        </div>
+        <ul class="navigation__list navigation__list--start reset-list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">About</a>
+          </li>
+        </ul>
+        <ul class="navigation__list navigation__list--end reset-list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#get-in-touch">Get In Touch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li><a href="#group-1">Group 1</a></li>
-        <li><a href="#">Group 2</a></li>
-        <li><a href="#">Group 3</a></li>
-        <li><a href="#">Group 4</a></li>
-        <li><a href="#">Group 5</a></li>
-        <li><a href="#">Group 6</a></li>
-      </ul>
-      <div>
-        <div id="group-1">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-1.jpg" alt="The name of the illustration should be here">
+  <main class="page-main">
+    <section class="portfolio" id="portfolio">
+      <h2 class="visuallyhidden">Portfolio</h2>
+      <div class="wrapper wrapper--portfolio">
+        <div class="box box--portfolio">
+          <ul class="portfolio__navigation slider-nav reset-list" role="tablist">
+            <li class="slider-nav__item">
+              <a class="slider-nav__link" id="slide-1-tab" href="#slide-1" role="tab" aria-controls="slide-1" aria-selected="false">
+                <span class="visuallyhidden">Slide 1</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-2.jpg" alt="The name of the illustration should be here">
+            <li class="slider-nav__item">
+              <a class="slider-nav__link" id="slide-2-tab" href="#slide-2" role="tab" aria-controls="slide-2" aria-selected="false">
+                <span class="visuallyhidden">Slide 2</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-3.jpg" alt="The name of the illustration should be here">
+            <li class="slider-nav__item">
+              <a class="slider-nav__link slider-nav__link--active" id="slide-3-tab" href="#slide-3" role="tab" aria-controls="slide-3" aria-selected="true">
+                <span class="visuallyhidden">Slide 3</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-4.jpg" alt="The name of the illustration should be here">
+            <li class="slider-nav__item">
+              <a class="slider-nav__link" id="slide-4-tab" href="#slide-4" role="tab" aria-controls="slide-4" aria-selected="false">
+                <span class="visuallyhidden">Slide 4</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-5.jpg" alt="The name of the illustration should be here">
+            <li class="slider-nav__item">
+              <a class="slider-nav__link" id="slide-5-tab" href="#slide-5" role="tab" aria-controls="slide-5" aria-selected="false">
+                <span class="visuallyhidden">Slide 5</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-6.jpg" alt="The name of the illustration should be here">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-7.jpg" alt="The name of the illustration should be here">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-8.jpg" alt="The name of the illustration should be here">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-9.jpg" alt="The name of the illustration should be here">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-10.jpg" alt="The name of the illustration should be here">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-11.jpg" alt="The name of the illustration should be here">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-12.jpg" alt="The name of the illustration should be here">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/illustrations/illustration-13.jpg" alt="The name of the illustration should be here">
+            <li class="slider-nav__item">
+              <a class="slider-nav__link" id="slide-6-tab" href="#slide-6" role="tab" aria-controls="slide-6" aria-selected="false">
+                <span class="visuallyhidden">Slide 6</span>
               </a>
             </li>
           </ul>
+          <div class="inner inner--portfolio side-lines">
+            <div class="side-lines__line side-lines__line--left"></div>
+            <div class="side-lines__line side-lines__line--right"></div>
+            <div class="portfolio__slider slider">
+              <ul class="slider__slide gallery reset-list" id="slide-1" role="tabpanel" aria-labelledby="slider-1-tab"></ul>
+              <ul class="slider__slide gallery reset-list" id="slide-2" role="tabpanel" aria-labelledby="slider-2-tab"></ul>
+              <ul class="slider__slide slider__slide--active gallery reset-list" id="slide-3" role="tabpanel" aria-labelledby="slider-3-tab">
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-1.jpg" alt="The name of the illustration should be here" style="object-position: 54% 70%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-2.jpg" alt="The name of the illustration should be here" style="object-position: 50% 66%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-3.jpg" alt="The name of the illustration should be here">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-4.jpg" alt="The name of the illustration should be here" style="object-position: 48% 118%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-5.jpg" alt="The name of the illustration should be here" style="object-position: 52% 78%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-6.jpg" alt="The name of the illustration should be here" style="object-position: 48% 82%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-7.jpg" alt="The name of the illustration should be here" style="object-position: 48% 50%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-8.jpg" alt="The name of the illustration should be here" style="object-position: 45% 50%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-9.jpg" alt="The name of the illustration should be here" style="object-position: 52% 56%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-10.jpg" alt="The name of the illustration should be here">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-11.jpg" alt="The name of the illustration should be here">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-12.jpg" alt="The name of the illustration should be here" style="object-position: 48% 46%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a class="gallery__link" href="#">
+                    <div class="hexagon">
+                      <div class="hexagon__inner hexagon__inner--a">
+                        <div class="hexagon__inner hexagon__inner--b">
+                          <img class="hexagon__image" src="./assets/images/illustrations/illustration-13.jpg" alt="The name of the illustration should be here" style="object-position: 24% 42%;">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="slider__slide gallery reset-list" id="slide-4" role="tabpanel" aria-labelledby="slider-4-tab"></ul>
+              <ul class="slider__slide gallery reset-list" id="slide-5" role="tabpanel" aria-labelledby="slider-5-tab"></ul>
+              <ul class="slider__slide gallery reset-list" id="slide-6" role="tabpanel" aria-labelledby="slider-6-tab"></ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Smith Anderson<br>
-        Illustrator & Character Designer
-      </p>
-      <img src="./assets/images/smith-anderson.jpg" alt="Smith Anderson's photo">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
-      <ul>
-        <li><a href="#top">Facebook profile</a></li>
-        <li><a href="#top">Twitter profile</a></li>
-        <li><a href="#top">Google+ profile</a></li>
-        <li><a href="#top">Pinterest profile</a></li>
-        <li><a href="#top">LinkedIn profile</a></li>
-        <li><a href="#top">Dribbble profile</a></li>
-      </ul>
+    <section class="about" id="about">
+      <h2 class="visuallyhidden">About</h2>
+      <div class="wrapper wrapper--about">
+        <div class="inner inner--about">
+          <div class="person-card">
+            <div class="person-card__photo">
+              <div class="hexagon">
+                <div class="hexagon__inner hexagon__inner--a">
+                  <div class="hexagon__inner hexagon__inner--b">
+                    <img class="hexagon__image" src="./assets/images/smith-anderson.jpg" alt="Smith Anderson's photo" style="object-position: 49% 53%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="person-card__info">
+              <p class="person-card__name">Smith Anderson</p>
+              <p class="person-card__addition">Illustrator & Character Designer</p>
+              <p class="person-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
+              <ul class="person-card__socials socials reset-list">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--facebook" href="#top">
+                    <span class="visuallyhidden">Facebook profile</span>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--twitter" href="#top">
+                    <span class="visuallyhidden">Twitter profile</span>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--google" href="#top">
+                    <span class="visuallyhidden">Google+ profile</span>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--pinterest" href="#top">
+                    <span class="visuallyhidden">Pinterest profile</span>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--linkedin" href="#top">
+                    <span class="visuallyhidden">LinkedIn profile</span>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--dribbble" href="#top">
+                    <span class="visuallyhidden">Dribbble profile</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer id="get-in-touch">
-    <h2>Get In Touch</h2>
-    <form action="form-sender.php" method="POST">
-      <fieldset>
-        <legend>In order to get in touch use the contact form below:</legend>
-        <div>
-          <label for="user-name">Name</label>
-          <input id="user-name" name="name" type="text" placeholder="Name (Required)" required>
+  <footer class="page-footer" id="get-in-touch" aria-labelledby="get-in-touch-heading">
+    <div class="wrapper wrapper--page-footer">
+      <div class="box box--page-footer">
+        <div class="inner inner--page-footer">
+          <h2 class="page-footer__title" id="get-in-touch-heading">Get In Touch</h2>
+          <div class="page-footer__body">
+            <form class="page-footer__form form" action="./" method="POST">
+              <fieldset>
+                <legend class="form__title">In order to get in touch use the contact form below:</legend>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="user-name">Name</label>
+                  <input id="user-name" name="name" type="text" placeholder="Name (Required)" required>
+                </div>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="user-email">Email</label>
+                  <input id="user-email" name="email" type="email" placeholder="Email (Required)" required>
+                </div>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="email-subject">Subject</label>
+                  <input id="email-subject" name="subject" type="text" placeholder="Subject">
+                </div>
+                <div class="form__field">
+                  <label class="visuallyhidden" for="email-message">Message</label>
+                  <textarea id="email-message" name="message" placeholder="Write your message here..."></textarea>
+                </div>
+              </fieldset>
+              <button class="form__button">Send</button>
+            </form>
+            <div class="page-footer__addition addition">
+              <p class="addition__info"><b>Quisque Hendrerit:</b> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
+              <ul class="addition__contacts contacts reset-list">
+                <li class="contacts__item contacts__item--address">Elm St. 14/05 Lost City</li>
+                <li class="contacts__item contacts__item--phone"><a class="contacts__link" href="tel:+35283318635">+3528 331 86 35</a></li>
+                <li class="contacts__item contacts__item--mail"><a class="contacts__link" href="mailto:info@hexalcorp.com">info@hexalcorp.com</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <label for="user-email">Email</label>
-          <input id="user-email" name="email" type="email" placeholder="Email (Required)" required>
-        </div>
-        <div>
-          <label for="email-subject">Subject</label>
-          <input id="email-subject" name="subject" type="text" placeholder="Subject">
-        </div>
-        <div>
-          <label for="email-message">Message</label>
-          <textarea id="email-message" name="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-        </div>
-      </fieldset>
-      <button>Send</button>
-    </form>
-    <p><b>Quisque Hendrerit:</b> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
-    <ul>
-      <li>Elm St. 14/05 Lost City</li>
-      <li><a href="tel:+35283318635">+3528 331 86 35</a></li>
-      <li><a href="mailto:info@hexalcorp.com">info@hexalcorp.com</a></li>
-    </ul>
-
-    <p>&copy; Copyright 2013 by PSDchat</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="wrapper wrapper--copyright">
+        <p class="copyright-text">&copy; Copyright 2013 by PSDchat</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
